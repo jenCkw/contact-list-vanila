@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+    <title>Contact list</title>
+</head>
+<body>
+    <nav>
+        <h2>Répertoire des contacts</h2>
+    </nav>
+    <div class="container">
+        <div class="form-input">
+            <div class="title-container">
+                <h3>Formulaire de contact</h3>
+            </div>
+            <form class="form" action="">
+                <div class="form-control">
+                    <label for="">Prénom</label>
+                    <input type="text" name="prenom" id="prenom">
+                </div>
+                <div class="form-control">
+                    <label for="">Nom</label>
+                    <input type="text" name="nom" id="nom">
+                </div>
+               
+                <div class="form-control">
+                    <label for="">Télephone</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="form-control">
+                    <label for="">Groupe</label>
+                    <input type="text" name="group" id="group">
+                </div>
+                <div class="form-control">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-control">
+                    <label for="">Bio</label>
+                   <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                </div>
+                <div class="image-preview">
+                    <img src="" alt="" class="image-avatar">
+                    <span class="image-text">Déposez la photo ici</span>
+                    <input type="file" name="myFile" onchange="uploadFile(event)" class="image-input" accept="image/*">
+                </div>
+                <div class="button-section">
+                    <button type="submit" id="create" class="btn btn-create">Créer</button>
+                    <button type="reset" class="btn btn-reint">Rénit</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-list">
+            <div class="title-container">
+                <h3>Liste des contacts</h3>
+            </div>
+            <div id="contact-items">
+            </div>
+            </div>
+           
+    </div>
+    <script src="https://js.upload.io/upload-js/v1"></script>
+    <script src="index.js"></script>
+</body>
+</html>
